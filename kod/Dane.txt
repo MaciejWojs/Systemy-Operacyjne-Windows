@@ -1,0 +1,16 @@
+name,surname,fullname,initials,position,email,birthdate,registeredAt,pass
+Ofelia,Gil,Ofelia Gil,OG,Programista,O.Gil@,1962-03-03,2024-09-14,Fedora39#
+Anastazja,Michałek,Anastazja Michałek,AM,Ksiegowosc,A.Michalek@,1958-05-13,2024-10-24,Fedora39#
+Penelopa,Pawelec,Penelopa Pawelec,PP,Marketing,P.Pawelec@,1990-08-12,2024-08-30,Fedora39#
+Laurencja,Mazur,Laurencja Mazur,LM,Kadry,L.Mazur@,1983-02-16,2024-08-21,Fedora39#
+Alina,Błaszczyk,Alina Błaszczyk,AB,IT,A.Blaszczyk@,1975-02-22,2024-08-25,Fedora39#
+Natanael,Wojtkowiak,Natanael Wojtkowiak,NW,Programista,N.Wojtkowiak@,1950-03-23,2024-07-25,Fedora39#
+Pankracy,Bartosik,Pankracy Bartosik,PB,Ksiegowosc,P.Bartosik@,1979-12-14,2024-01-24,Fedora39#
+Klaudia,Kuciński,Klaudia Kuciński,KK,Marketing,K.Kucinski@,1951-08-04,2024-02-28,Fedora39#
+Beniamin,Kosowski,Beniamin Kosowski,BK,Kadry,B.Kosowski@,1948-06-24,2024-11-09,Fedora39#
+Klaudiusz,Kowal,Klaudiusz Kowal,KK,IT,K.Kowal@,1973-02-10,2024-05-14,Fedora39#
+Abraham,Kulik,Abraham Kulik,AK,Programista,A.Kulik@,1976-05-05,2024-05-19,Fedora39#
+Cecylia,Majewski,Cecylia Majewski,CM,Ksiegowosc,C.Majewski@,1971-05-15,2024-05-19,Fedora39#
+Krystyna,Pawelec,Krystyna Pawelec,KP,Marketing,K.Pawelec@,1965-07-04,2024-11-17,Fedora39#
+Łazarz,Kolasa,Łazarz Kolasa,ŁK,Kadry,L.Kolasa@,2001-10-09,2024-07-05,Fedora39#
+Laurencjusz,Szyszka,Laurencjusz Szyszka,LS,IT,L.Szyszka@,1948-11-04,2025-01-05,Fedora39#
