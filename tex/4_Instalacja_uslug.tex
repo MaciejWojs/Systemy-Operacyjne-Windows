@@ -2,3 +2,232 @@
 \section{Procedury instalacyjne poszczególnych usług}		%4
 % Procedury instalacyjne poszczególnych usług.
 % (W podpunktach zamieścić polecenia dotyczące instalacji wdrażanych usług) 
+
+\subsection{Instalacja serwera}
+
+Projekt rozpoczęto od instalacji systemu Windows Server 2022 na serwerze zainstalowanym w maszynie wirtualnej. Proces instalacji serwera jest widoczny na \OznaczZdjecie[rysunku]{sdc-install}. Po zainstalowaniu systemu, nadano serwerowi nazwę \texttt{SDC06} oraz przydzielono adres IP 192.168.6.40/24 co jest widoczne na \OznaczZdjecie[zdjęciu]{sdc-adres}.
+
+\fg{rys/SDC-instalacja/1.png}{Instalacja serwera SDC}{sdc-install}
+\clearpage
+\fg{rys/SDC-instalacja/2.png}{Adresacja serwera SDC}{sdc-adres}
+\subsection{Instalacja usługi Active Directory Domain Services (AD DS)}
+Dalszym krokiem była instalacja usługi Active Directory Domain Services (AD DS) na serwerze \texttt{SDC06}.
+
+\subsubsection{Proces instalacji AD DS}
+\begin{enumerate}
+\item Otwarcie \texttt{Server Manager}
+\item Wybranie \texttt{Manage} $\rightarrow$ \texttt{Add Roles and Features}
+\item Kliknięcie \texttt{Next}
+\item Wybranie \texttt{Role-based or feature-based installation}. \OznaczZdjecie{ad-ds1}
+\item Wybranie serwera \texttt{SDC06} i kliknięcie \texttt{Next}. \OznaczZdjecie{ad-ds2}
+\item Wybranie roli \texttt{Active Directory Domain Services}.\OznaczZdjecie{ad-ds3} i \OznaczZdjecie[rysunek]{ad-ds4}
+\item Kliknięcie \texttt{Next} na ekranie z funkcjami. \OznaczZdjecie{ad-ds5}
+\item Kliknięcie \texttt{Next} na ekranie z informacjami dotyczącymi AD. \OznaczZdjecie{ad-ds6}
+\item Kliknięcie \texttt{Next} na ekranie podsumowania. \OznaczZdjecie{ad-ds7}
+\item Kliknięcie \texttt{Install}
+\item Ponowne uruchomienie serwera
+\end{enumerate}
+
+\fg{rys/uslugi/AD/instalacja/1.png}{Instalacja oparta na rolach lub funkcjach}{ad-ds1}
+\fg{rys/uslugi/AD/instalacja/2.png}{Ekran z wyborem SDC}{ad-ds2}
+\clearpage
+\fg{rys/uslugi/AD/instalacja/3.png}{Dodanie usługi AD DS}{ad-ds3}
+\fg{rys/uslugi/AD/instalacja/4.png}{Wybór roli serwera: AD DS}{ad-ds4}
+\clearpage
+\fg{rys/uslugi/AD/instalacja/5.png}{Wybór funcji serwera}{ad-ds5}
+\fg{rys/uslugi/AD/instalacja/6.png}{Ekran z informacjami dotyczącymi AD}{ad-ds6}
+\clearpage
+\fg{rys/uslugi/AD/instalacja/7.png}{ekran podsumowania instalacji AD}{ad-ds7}
+\fg{rys/uslugi/AD/instalacja/8.png}{Progress instalacji}{ad-ds8}
+\clearpage
+\fg{rys/uslugi/AD/instalacja/9.png}{Zainstalowane AD}{ad-ds9}
+
+
+\subsubsection{Konfiguracja usługi AD DS}
+Dalszym krokiem było utworzenie domeny \texttt{BinaryBuilders.ad} na serwerze oraz skonfigurowanie lasu w usłudze Active Directory Domain Services (AD DS). Proces ten obejmował kilka kluczowych etapów:
+\begin{enumerate}
+	\item Podniesienie poziomu serwera do kontrolera domeny. \OznaczZdjecie{ad-ds10}
+	\item Stworzenie lasu. \OznaczZdjecie{ad-ds11}
+	\item Wybór hasła dla trybu DSRM. \OznaczZdjecie{ad-ds12}
+	\item Konfiguracja DNS. \OznaczZdjecie{ad-ds13}
+	\item Dodanie nazwy NetBIOS \texttt{BINARYBUILDERS}. \OznaczZdjecie{ad-ds14}
+	\item Wybór ścieżki do plików. \OznaczZdjecie{ad-ds15}
+	\item Przegląd ustawień i wyświetlenie skryptu instalacji. \OznaczZdjecie{ad-ds16}
+	\item Sprawdzenie wymagań komputera do instalacji AD. \OznaczZdjecie{ad-ds17}
+	\item Poprawne sprawdzenie wymagań komputera do instalacji AD. \OznaczZdjecie{ad-ds18}
+	\item Rozpoczęcie instalacji. \OznaczZdjecie{ad-ds19}
+	\item Ekran informujący o wylogowaniu. \OznaczZdjecie{ad-ds20}
+
+\end{enumerate}
+
+\fg{rys/uslugi/AD/konfiguracja/1.png}{Podniesienie poziomu serwera do kontrolera domeny}{ad-ds10}
+\fg{rys/uslugi/AD/konfiguracja/2.png}{Stworzenie lasu. Domena BinaryBuilders.ad}{ad-ds11}
+\clearpage
+\fg{rys/uslugi/AD/konfiguracja/3.png}{Wybór hasła dla trybu DSRM (domyślne opcje)}{ad-ds12}
+
+\fg{rys/uslugi/AD/konfiguracja/4.png}{Konfiguracja DNS}{ad-ds13}
+\clearpage
+\fg{rys/uslugi/AD/konfiguracja/5.png}{Dodanie nazwy NetBIOS BINARYBUILDERS}{ad-ds14}
+\fg{rys/uslugi/AD/konfiguracja/6.png}{Wybór ścieżki do plików (Domyślne opcje)}{ad-ds15}
+\clearpage
+\fg{rys/uslugi/AD/konfiguracja/7.png}{Przegląd ustawień i wyświetlenie skryptu instalacji}{ad-ds16}
+\fg{rys/uslugi/AD/konfiguracja/8.png}{Sprawdzenie wymagań komputera do instalacji AD}{ad-ds17}
+\clearpage
+\fg{rys/uslugi/AD/konfiguracja/9.png}{Poprawne sprawdzenie wymagań}{ad-ds18}
+\fg{rys/uslugi/AD/konfiguracja/10.png}{Rozpoczęcie instalacji}{ad-ds19}
+\clearpage
+\fg{rys/uslugi/AD/konfiguracja/11.png}{Ekran informujący o wylogowaniu w krótce}{ad-ds20}
+\fg{rys/uslugi/AD/konfiguracja/12.png}{Zalogowanie się na konto administratora domeny}{ad-ds22}
+\clearpage
+
+
+\subsection{Instalacja usługi Domain Name System (DNS)}
+Po zainstalowaniu usługi Active Directory Domain Services (AD DS) przystąpiono do instalacji usługi Domain Name System (DNS) na serwerze \texttt{SDC06}, ponieważ jest to niezbędne do prawidłowego funkcjonowania AD DS, a ja zapomniałem wykonać tego kroku wcześniej.
+\subsubsection{Proces instalacji DNS}
+\begin{enumerate}
+	\item Otwarcie \texttt{Server Manager}
+	\item Wybranie \texttt{Manage} $\rightarrow$ \texttt{Add Roles and Features}
+	\item Kliknięcie \texttt{Next}
+	\item Wybranie \texttt{Role-based or feature-based installation}. \OznaczZdjecie{dns1}
+	\item Wybranie serwera \texttt{SDC06} i kliknięcie \texttt{Next}. \OznaczZdjecie{dns2}
+	\item Wybranie roli \texttt{DNS Server}.\OznaczZdjecie{dns3} i \OznaczZdjecie[rysunek]{dns4}
+	\item Kliknięcie \texttt{Next} na ekranie z funkcjami. \OznaczZdjecie{dns5}
+	\item Kliknięcie \texttt{Next} na ekranie z informacjami dotyczącymi DNS.
+	\item Kliknięcie \texttt{Next} na ekranie podsumowania. \OznaczZdjecie{dns6}
+	\item Kliknięcie \texttt{Install} na ekranie z postępem instalacji. \OznaczZdjecie{dns7}
+\end{enumerate}
+
+\fg{rys/uslugi/DNS/instalacja/1.png}{Instalacja oparta na rolach lub funkcjach}{dns1}
+\fg{rys/uslugi/DNS/instalacja/2.png}{Ekran z wyborem SDC}{dns2}
+\clearpage
+\fg{rys/uslugi/DNS/instalacja/3.png}{Dodanie usługi DNS}{dns3}
+\fg{rys/uslugi/DNS/instalacja/4.png}{Wybór roli serwera: DNS}{dns4}
+\clearpage
+
+\fg{rys/uslugi/DNS/instalacja/5.png}{Wybór funcji serwera}{dns5}
+\fg{rys/uslugi/DNS/instalacja/6.png}{Ekran podsumowania}{dns6}
+\clearpage
+\fg{rys/uslugi/DNS/instalacja/7.png}{Postęp instalacji DNS}{dns7}
+
+
+\subsubsection{Proces konfiguracji DNS}
+Po zainstalowaniu usługi DNS przystąpiono do konfiguracji usługi. Proces ten obejmował kilka kluczowych etapów:
+
+\begin{enumerate}
+	\item Otwarcie \texttt{DNS Manager} z poziomu \texttt{Server Manager} \OznaczZdjecie{dns8}
+	\item Wybranie \texttt{SDC06.BinaryBuilders.ad} \OznaczZdjecie{dns9}
+	\item Dodanie nowego hosta typu \texttt{A} o nazwie \texttt{www} i adresie IP serwera \texttt{SDC06}: 192.168.6.40 w strefie przeszukiwania do przodu. \OznaczZdjecie{dns10}
+	\item Dodanie strefy przeszukiwania do tyłu. \OznaczZdjecie{dns11}
+	\begin {enumerate}
+	\item Kliknięcie \texttt{Next w oknie dodawania strefy przeszukiwania do tyłu} \OznaczZdjecie{dns12}
+	\item Wybranie strefy podstawowej \texttt{BinaryBuilders.ad} \OznaczZdjecie{dns12}
+	\item Wybranie strefy replikacji \texttt{To all DNS servers running on domain controllers in this domain: BinaryBuilders.ad} \OznaczZdjecie{dns13}
+	\item Wybór IPv4 \OznaczZdjecie{dns14}
+	\item Wybór nazwy lub adresu IP translacji \OznaczZdjecie{dns15}
+	\item Wybór dynamicznego odświeżania strefy \OznaczZdjecie{dns16}
+	\item Kliknięcie \texttt{Finish} \OznaczZdjecie{dns17}
+	\end{enumerate}
+	\item Dodanie wskaźnika ptr do strefy przeszukiwania do tyłu. \OznaczZdjecie{dns18}
+\end{enumerate}
+
+\fg{rys/uslugi/DNS/konfiguracja/1.png}{Otwarcie DNS Manager}{dns8}
+\clearpage
+\fg{rys/uslugi/DNS/konfiguracja/2.png}{Wybranie SDC06.BinaryBuilders.ad}{dns9}
+\clearpage
+\fg{rys/uslugi/DNS/konfiguracja/3.png}{Dodanie nowego hosta typu A}{dns10}
+\clearpage
+\fg{rys/uslugi/DNS/konfiguracja/4.png}{Dodanie strefy przeszukiwania do tyłu}{dns11}
+\clearpage
+\fg{rys/uslugi/DNS/konfiguracja/5.png}{Okno dodawania strefy}{dns12}
+\clearpage
+\fg{rys/uslugi/DNS/konfiguracja/6.png}{Wybór strefy podstawowej}{dns12}
+\clearpage
+\fg{rys/uslugi/DNS/konfiguracja/7.png}{Wybór strefy replikacji}{dns13}
+\clearpage
+\fg{rys/uslugi/DNS/konfiguracja/8.png}{Wybór IPv4}{dns14}
+\clearpage
+\fg{rys/uslugi/DNS/konfiguracja/9.png}{Wybór nazwy lub adresu IP translacji}{dns15}
+\clearpage
+\fg{rys/uslugi/DNS/konfiguracja/10.png}{Wybór dynamicznego odświeżania strefy}{dns16}
+\clearpage
+\fg{rys/uslugi/DNS/konfiguracja/11.png}{Zakończenie dodawania strefy}{dns17}
+\clearpage
+\fg{rys/uslugi/DNS/konfiguracja/12.png}{Dodanie wskaźnika ptr}{dns18}
+\clearpage
+
+\subsection{Skrypt dodający użytkowników i grupy do domeny}
+Skrypt służy do automatycznego tworzenia użytkowników i grup w Active Directory na podstawie danych z pliku CSV. Skrypt jest napisany w języku PowerShell i wykorzystuje moduł Active Directory.
+\subsubsection{Wytłumaczenie działania skryptu}
+
+\paragraph{Główne komponenty}
+
+\begin{verbatim}
+$groupsOU = "OU=Grupy,$ou"
+\end{verbatim}
+Definiuje ścieżkę do kontenera grup w strukturze AD.
+
+Skrypt iteruje przez każdy wiersz pliku CSV:
+\begin{itemize}
+    \item Tworzy nazwę użytkownika (imię.nazwisko)
+    \item Normalizuje adres email
+    \item Przypisuje stanowisko do grupy
+\end{itemize}
+
+\paragraph{Zarządzanie grupami}
+\begin{itemize}
+    \item Sprawdza istnienie grupy
+    \item Tworzy nową grupę jeśli nie istnieje
+    \item Zakres grupy: Global
+    \item Lokalizacja: OU=Grupy
+\end{itemize}
+
+\paragraph{Zarządzanie użytkownikami}
+Przy wykryciu istniejącej nazwy użytkownika:
+\begin{itemize}
+    \item Dodaje losowy numer (1-999)
+    \item Aktualizuje adres email
+    \item Sprawdza ponownie unikalność
+\end{itemize}
+
+Parametry nowego konta:
+\begin{itemize}
+    \item SamAccountName
+    \item UserPrincipalName
+    \item Pełna nazwa
+    \item Email służbowy
+    \item Dział
+    \item Hasło (konwertowane na SecureString)
+\end{itemize}
+
+\paragraph{Ustawienia bezpieczeństwa}
+\begin{itemize}
+    \item Konto aktywne od razu
+    \item Hasło nigdy nie wygasa
+    \item Brak wymuszonej zmiany hasła
+\end{itemize}
+
+
+\paragraph{Wnioski}
+Skrypt jest efektywnym narzędziem do automatyzacji procesu tworzenia kont użytkowników i grup w Active Directory. Może być łatwo dostosowany do różnych scenariuszy i wymagań.
+
+\subsubsection{Skrypt}
+\ListingFile{CSV}{CSV}
+\clearpage
+\subsubsection{Przykładowe dane do skryptu}
+\ListingFile{Dane}{Dane}
+\clearpage
+
+\subsection{Instalacja usługi Dynamic Host Configuration Protocol (DHCP)}
+
+\subsection{Instalacja usługi Group Policy Objects (GPO)}
+
+\subsection{Instalacja usługi Windows Deployment Services (WDS)}
+
+\subsection{Instalacja usługi RAID 1}
+
+\subsection{Instalacja serwera WWW}
+
+\subsection{Instalacja WordPress}
+
+\subsection{Instalacja serwera DHCP}
+
