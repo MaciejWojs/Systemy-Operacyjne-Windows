@@ -7,78 +7,100 @@ W niniejszym rozdziale przedstawiono szczegółową charakterystykę technologii
 
 \subsection{Active Directory Domain Services (AD DS)}
 Active Directory Domain Services \footnote{Active Directory na Wikipedii\cite{ActiveDirectory}} (AD DS) to centralna usługa katalogowa firmy Microsoft, zaprojektowana w celu zarządzania zasobami sieciowymi w sposób efektywny i skalowalny. AD DS pozwala na tworzenie hierarchicznych struktur domenowych, które umożliwiają organizowanie użytkowników, komputerów, grup, drukarek i innych zasobów. Kluczowe funkcje AD DS obejmują:
-- Centralne uwierzytelnianie użytkowników i urządzeń,
-- Zarządzanie politykami bezpieczeństwa poprzez Group Policy,
-- Możliwość delegowania uprawnień administracyjnych,
-- Integrację z innymi usługami sieciowymi, takimi jak DNS czy DHCP.
+\begin{itemize}
+	\item Centralne uwierzytelnianie użytkowników i urządzeń,
+    \item Zarządzanie politykami bezpieczeństwa poprzez Group Policy,
+    \item Możliwość delegowania uprawnień administracyjnych,
+    \item Integrację z innymi usługami sieciowymi, takimi jak DNS czy DHCP.
+\end{itemize}
 Dzięki AD DS organizacje mogą efektywnie zarządzać dużymi środowiskami IT, zwiększając bezpieczeństwo i wydajność operacyjną.
 
 \subsection{Domain Name System (DNS)}
 Domain Name System\footnote{Więcej informacji o DNS\cite{dns}} (DNS) to podstawowy element infrastruktury sieciowej, który odpowiada za zamianę nazw domenowych (np. www.przyklad.com) na adresy IP wykorzystywane przez urządzenia sieciowe. DNS umożliwia łatwe lokalizowanie serwerów, aplikacji i innych zasobów. Najważniejsze cechy DNS to:
-- Rozproszona struktura, która zapewnia skalowalność i niezawodność,
-- Obsługa zapytań o różne rekordy, takie jak A (adres IPv4), AAAA (adres IPv6), MX (serwer poczty), czy CNAME (aliasy),
-- Mechanizmy redundancji i buforowania, które zwiększają wydajność i odporność na awarie.
+\begin{itemize}
+	\item Rozproszona struktura, która zapewnia skalowalność i niezawodność,
+\item Obsługa zapytań o różne rekordy, takie jak A (adres IPv4), AAAA (adres IPv6), MX (serwer poczty), czy CNAME (aliasy),
+\item Mechanizmy redundancji i buforowania, które zwiększają wydajność i odporność na awarie.
+\end{itemize}
 DNS jest fundamentem działania internetu i wielu aplikacji sieciowych, dlatego jego poprawna konfiguracja i zarządzanie mają kluczowe znaczenie.
 
 \subsection{Dynamic Host Configuration Protocol (DHCP)}
-Dynamic Host Configuration Protocol\footnote{Więcej informacji o DHCP\cite{dhcp}} (DNS) (DHCP) automatyzuje proces przypisywania adresów IP oraz innych parametrów sieciowych urządzeniom w sieci. Dzięki DHCP administratorzy mogą eliminować ręczną konfigurację każdego urządzenia, co jest szczególnie istotne w dużych środowiskach. Funkcje DHCP obejmują:
-- Dynamiczne przydzielanie adresów IP z puli adresowej,
-- Przekazywanie informacji o bramie domyślnej, serwerach DNS i czasie dzierżawy adresu,
-- Obsługę rezerwacji adresów IP dla konkretnych urządzeń.
+Dynamic Host Configuration Protocol\footnote{Więcej informacji o DHCP\cite{dhcp}} (DHCP) automatyzuje proces przypisywania adresów IP oraz innych parametrów sieciowych urządzeniom w sieci. Dzięki DHCP administratorzy mogą eliminować ręczną konfigurację każdego urządzenia, co jest szczególnie istotne w dużych środowiskach. Funkcje DHCP obejmują:
+\begin{itemize}
+    \item Dynamiczne przydzielanie adresów IP z puli adresowej,
+    \item Przekazywanie informacji o bramie domyślnej, serwerach DNS i czasie dzierżawy adresu,
+    \item Obsługę rezerwacji adresów IP dla konkretnych urządzeń.
+\end{itemize}
 DHCP znacznie upraszcza zarządzanie sieciami, minimalizując ryzyko konfliktów adresów IP i błędów konfiguracyjnych.
 
 \subsection{Group Policy Objects (GPO)}
-Group Policy Objects\footnote{Strona poświęcona administracji GPO\cite{gpo}} (DNS) (GPO) to mechanizm pozwalający administratorom na definiowanie i egzekwowanie ustawień konfiguracyjnych oraz polityk bezpieczeństwa w środowisku domenowym. Dzięki GPO możliwe jest centralne zarządzanie ustawieniami systemów operacyjnych, aplikacji i środowiska użytkownika. Przykładowe zastosowania GPO to:
-- Automatyczne wdrażanie oprogramowania na komputerach użytkowników,
-- Konfiguracja polityk haseł i zabezpieczeń,
-- Ustawienia pulpitu, mapowanie dysków sieciowych oraz drukarek.
+Group Policy Objects\footnote{Strona poświęcona administracji GPO\cite{gpo}} (GPO) to mechanizm pozwalający administratorom na definiowanie i egzekwowanie ustawień konfiguracyjnych oraz polityk bezpieczeństwa w środowisku domenowym. Dzięki GPO możliwe jest centralne zarządzanie ustawieniami systemów operacyjnych, aplikacji i środowiska użytkownika. Przykładowe zastosowania GPO to:
+\begin{itemize}
+	\item Automatyczne wdrażanie oprogramowania na komputerach użytkowników,
+    \item Konfiguracja polityk haseł i zabezpieczeń,
+    \item Ustawienia pulpitu, mapowanie dysków sieciowych oraz drukarek.
+\end{itemize}
 GPO zapewniają elastyczność i kontrolę w dużych środowiskach, ułatwiając przestrzeganie standardów korporacyjnych.
 
 \subsection{Windows Deployment Services (WDS)}
-Windows Deployment Services (WDS) to narzędzie, które umożliwia administratorom instalację systemów operacyjnych na komputerach poprzez sieć, bez potrzeby używania nośników fizycznych. WDS wspiera scenariusze takie jak:
-- Wdrażanie systemów Windows w trybie bezobsługowym (unattended),
-- Obsługa obrazów systemowych w formacie WIM i VHD,
-- Konfiguracja obrazów rozruchowych i instalacyjnych.
+Windows Deployment Services \footnote{Poradnik do Windows Deployment Services\cite{wds}}(WDS) to narzędzie, które umożliwia administratorom instalację systemów operacyjnych na komputerach poprzez sieć, bez potrzeby używania nośników fizycznych. WDS wspiera scenariusze takie jak:
+\begin{itemize}
+	\item Wdrażanie systemów Windows w trybie bezobsługowym (unattended),
+\item Obsługa obrazów systemowych w formacie WIM i VHD,
+\item Konfiguracja obrazów rozruchowych i instalacyjnych.
+\end{itemize}
 WDS pozwala na efektywne wdrażanie systemów w środowiskach, w których konieczna jest szybka instalacja na wielu urządzeniach jednocześnie.
 
 \subsection{RAID 1}
-RAID 1 to technologia macierzy dyskowej znana również jako mirroring (lustrzanie), która zapewnia pełną redundancję danych. Dane są zapisywane jednocześnie na dwóch dyskach, co gwarantuje ich dostępność w przypadku awarii jednego z nich. Kluczowe cechy RAID 1 obejmują:
-- Wysoką odporność na utratę danych dzięki pełnej kopii zapasowej,
-- Łatwość odtwarzania danych w przypadku awarii,
-- Lepszą wydajność odczytu dzięki możliwości równoczesnego odczytu z dwóch dysków.
+RAID 1\footnote{Więcej informacji na temat RAID 1 można znaleźć na Wikipedii\cite{raid}} to technologia macierzy dyskowej znana również jako mirroring (lustrzanie), która zapewnia pełną redundancję danych. Dane są zapisywane jednocześnie na dwóch dyskach, co gwarantuje ich dostępność w przypadku awarii jednego z nich. Kluczowe cechy RAID 1 obejmują:
+\begin{itemize}
+	\item Wysoką odporność na utratę danych dzięki pełnej kopii zapasowej,
+\item Łatwość odtwarzania danych w przypadku awarii,
+\item Lepszą wydajność odczytu dzięki możliwości równoczesnego odczytu z dwóch dysków.
+\end{itemize}
 RAID 1 jest idealnym rozwiązaniem dla aplikacji wymagających wysokiej niezawodności, takich jak serwery baz danych czy systemy krytyczne.
 
 \subsection{iSCSI}
-Internet Small Computer Systems Interface (iSCSI) umożliwia przesyłanie poleceń SCSI przez sieci IP, co pozwala na budowanie sieciowych systemów pamięci masowej (SAN). iSCSI zapewnia:
-- Niskie koszty wdrożenia w porównaniu z tradycyjnymi technologiami SAN,
-- Łatwość integracji z istniejącymi infrastrukturami sieciowymi,
-- Wysoką wydajność dzięki zastosowaniu dedykowanych protokołów.
+Internet Small Computer Systems Interface\footnote{Dodatkowe szczegóły dotyczące protokołu iSCSI są dostępne na Wikipedii.\cite{iscsi}} (iSCSI) umożliwia przesyłanie poleceń SCSI przez sieci IP, co pozwala na budowanie sieciowych systemów pamięci masowej (SAN). iSCSI zapewnia:
+\begin{itemize}
+	\item Niskie koszty wdrożenia w porównaniu z tradycyjnymi technologiami SAN,
+\item Łatwość integracji z istniejącymi infrastrukturami sieciowymi,
+\item Wysoką wydajność dzięki zastosowaniu dedykowanych protokołów.
+\end{itemize}
 iSCSI jest idealnym rozwiązaniem dla firm poszukujących skalowalnych i przystępnych cenowo technologii przechowywania danych.
 
 \subsection{Serwer Wydruków (Print Server)}
-Serwer Wydruków centralizuje zarządzanie drukarkami i zadaniami drukowania w środowisku sieciowym. Jego funkcje obejmują:
-- Udostępnianie drukarek w sieci lokalnej,
-- Monitorowanie zadań drukowania i zużycia materiałów eksploatacyjnych,
-- Zarządzanie uprawnieniami dostępu do drukarek.
+Serwer Wydruków\footnote{Poradnik dotyczący serwera wydruków na stronie Microsoft'u\cite{print_server}} centralizuje zarządzanie drukarkami i zadaniami drukowania w środowisku sieciowym. Jego funkcje obejmują:
+\begin{itemize}
+	\item Udostępnianie drukarek w sieci lokalnej,
+\item Monitorowanie zadań drukowania i zużycia materiałów eksploatacyjnych,
+\item Zarządzanie uprawnieniami dostępu do drukarek.
+\end{itemize}
 Dzięki serwerowi wydruków administratorzy mogą zwiększyć wydajność i kontrolę nad procesami drukowania, jednocześnie obniżając koszty operacyjne.
 
 \subsection{Serwer WWW}
-Serwer WWW, taki jak Internet Information Services (IIS), obsługuje aplikacje webowe oraz strony internetowe, umożliwiając ich udostępnianie użytkownikom w sieci lokalnej i internecie. Kluczowe funkcje serwera WWW to:
-- Obsługa protokołów HTTP, HTTPS, FTP i SMTP,
-- Integracja z technologiami ASP.NET i PHP,
-- Skalowalność i wsparcie dla aplikacji wymagających wysokiej wydajności.
+Serwer WWW, taki jak Internet Information Services\footnote{Dokumentacja Internet Information Services\cite{iis}} (IIS), obsługuje aplikacje webowe oraz strony internetowe, umożliwiając ich udostępnianie użytkownikom w sieci lokalnej i internecie. Kluczowe funkcje serwera WWW to:
+\begin{itemize}
+	\item Obsługa protokołów HTTP, HTTPS, FTP i SMTP,
+\item Integracja z technologiami ASP.NET i PHP,
+\item Skalowalność i wsparcie dla aplikacji wymagających wysokiej wydajności.
+\end{itemize}
 Serwery WWW odgrywają istotną rolę w nowoczesnych infrastrukturach IT, umożliwiając realizację usług online.
 
 \subsection{Failover Clustering z rolami SFS i DHCP Server}
-Failover Clustering to technologia zapewniająca wysoką dostępność aplikacji i usług poprzez połączenie serwerów w klastry. Role takie jak Scale-Out File Server (SFS) i DHCP Server umożliwiają:
-- Ciągłość działania usług w przypadku awarii jednego z węzłów klastra,
-- Łatwą skalowalność w celu dostosowania do rosnących wymagań,
-- Efektywne zarządzanie zasobami dyskowymi i sieciowymi.
+Failover Clustering\footnote{Przegląd klastrowania awaryjnego\cite{failover_clustering}} to technologia zapewniająca wysoką dostępność aplikacji i usług poprzez połączenie serwerów w klastry. Role takie jak Scale-Out File Server(SFS) i DHCP Server umożliwiają:
+\begin{itemize}
+	\item Ciągłość działania usług w przypadku awarii jednego z węzłów klastra,
+    \item Łatwą skalowalność w celu dostosowania do rosnących wymagań,
+    \item Efektywne zarządzanie zasobami dyskowymi i sieciowymi.
+\end{itemize}
 Failover Clustering znajduje zastosowanie w krytycznych środowiskach, gdzie nieprzerwane działanie usług jest kluczowe.
 
 \subsection{Automatyzacja - Skrypty PowerShell}
-PowerShell to zaawansowane środowisko skryptowe i powłoka poleceń zaprojektowana z myślą o administracji systemami Windows. Funkcjonalności PowerShell obejmują:
-- Automatyzację zadań, takich jak zarządzanie użytkownikami, konfiguracja systemów i monitorowanie zasobów,
-- Obsługę zdalnych operacji za pomocą protokołu WinRM,
-- Tworzenie modułów i skryptów dostosowanych do specyficznych potrzeb organizacji.
+PowerShell\footnote{Więcej informacji o narzędziu PowerShell\cite{powershell}} to zaawansowane środowisko skryptowe i powłoka poleceń zaprojektowana z myślą o administracji systemami Windows. Funkcjonalności PowerShell obejmują:
+\begin{itemize}
+	\item Automatyzację zadań, takich jak zarządzanie użytkownikami, konfiguracja systemów i monitorowanie zasobów,
+    \item Obsługę zdalnych operacji za pomocą protokołu WinRM,
+    \item Tworzenie modułów i skryptów dostosowanych do specyficznych potrzeb organizacji.
+\end{itemize}
 PowerShell jest narzędziem nieodzownym dla administratorów IT, umożliwiającym realizację nawet najbardziej złożonych operacji w sposób efektywny i powtarzalny.
