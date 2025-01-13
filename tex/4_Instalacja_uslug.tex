@@ -524,9 +524,76 @@ Na serwerze \texttt{SDC06} skonfigurowano polityki Group Policy Objects (GPO) w 
 
 
 \subsection{Instalacja usługi Dynamic Host Configuration Protocol (DHCP)}
+Na klastrze zainstalowano usługę Dynamic Host Configuration Protocol (DHCP) w celu automatycznego przydzielania adresów IP oraz konfiguracji sieci dla urządzeń w sieci lokalnej. 
+\fg{rys/uslugi/DHCP/1.png}{Otwarcie kreatora instalacji roli na klastrze}{DHCP1}
+\fg{rys/uslugi/DHCP/2.png}{Pierwsza strona kreatora}{DHCP2}
+\clearpage
+\fg{rys/uslugi/DHCP/3.png}{Instalacja oparta na rolach lub funkcjach}{DHCP3}
+\fg{rys/uslugi/DHCP/4.png}{Wybór serwerów}{DHCP4}
+\clearpage
+\fg{rys/uslugi/DHCP/5.png}{Wybranie funkcji DHCP}{DHCP5}
+\fg{rys/uslugi/DHCP/6.png}{Ekran dotyczący DHCP Server}{DHCP6}
+\clearpage
+\fg{rys/uslugi/DHCP/7.png}{Rozpoczęcie instalacji}{DHCP7}
+\fg{rys/uslugi/DHCP/8.png}{Powrót do Failover Cluster Manager i kreatora funkcji DHCP – nadanie nazwy serwera i ustalenie adresu IP}{DHCP8}
+\clearpage
+\fg{rys/uslugi/DHCP/9.png}{Dodanie dysku 5GB do maszyny wirtualnej}{DHCP9}
+\fg{rys/uslugi/DHCP/10.png}{Widok dysku w ustawieniach maszyny wirtualnej}{DHCP10}
+\clearpage
+\fg{rys/uslugi/DHCP/11.png}{Initializacja dysku}{DHCP11}
+\fg{rys/uslugi/DHCP/12.png}{Formatowanie dysku i nadanie etykiety DHCP}{DHCP12}
+\clearpage
+\fg{rys/uslugi/DHCP/13.png}{Przejście do New iSCSI Virtual Disk}{DHCP13}
+\fg{rys/uslugi/DHCP/14.png}{Dokończenie konfiguracji roli DHCP na SN1 i SN2}{DHCP14}
+\clearpage
+\fg{rys/uslugi/DHCP/15.png}{Wybór dysku do konfiguracji $\rightarrow$ E: w New iSCSI Virtual Disk}{DHCP15}
+\fg{rys/uslugi/DHCP/16.png}{Wybór nazwy dysku $\rightarrow$ DHCP}{DHCP16}
+\clearpage
+\fg{rys/uslugi/DHCP/17.png}{Wybór rozmiaru dysku $\rightarrow$ 5GB}{DHCP17}
+\fg{rys/uslugi/DHCP/18.png}{Nowy cel}{DHCP18}
+\clearpage
+\fg{rys/uslugi/DHCP/19.png}{Nazwa celu DHCP-SN1-SN2-KLASTER}{DHCP19}
+\fg{rys/uslugi/DHCP/20.png}{Dodanie serwerów dostępu SN1 i SN2}{DHCP20}
+\clearpage
+\fg{rys/uslugi/DHCP/21.png}{Ekran potwierdzenia ustawień iSCSI}{DHCP21}
+\fg{rys/uslugi/DHCP/22.png}{Połaćzenie z dyskiem na SN1 i SN2}{DHCP22}
+\clearpage
+\fg{rys/uslugi/DHCP/23.png}{Automatyczna konfiguracja dysku na SN1 i SN2}{DHCP23}
+\fg{rys/uslugi/DHCP/24.png}{Przestawienie dysków na online na SN1}{DHCP24}
+\clearpage
+\fg{rys/uslugi/DHCP/25.png}{Inicjalizacja dysku na SN1}{DHCP25}
+\fg{rys/uslugi/DHCP/26.png}{Formatowanie i nadanie etykiety dysku na SN1}{DHCP26}
+\clearpage
+\fg{rys/uslugi/DHCP/27.png}{Dodanie dysku do klastra}{DHCP27}
+\fg{rys/uslugi/DHCP/28.png}{Wynik dodania dysku do klastra}{DHCP28}
+\clearpage
+\fg{rys/uslugi/DHCP/29.png}{Kontynuacja dodawania roli DHCP dodanie dysku klastra do roli}{DHCP29}
+\fg{rys/uslugi/DHCP/30.png}{Ekran potwierdzenia}{DHCP30}
+\clearpage
+\fg{rys/uslugi/DHCP/31.png}{Podsumowanie dodania roli DHCP}{DHCP31}
+\fg{rys/uslugi/DHCP/32.png}{Otworzenie zarządzania DHCP}{DHCP32}
+\clearpage
+\fg{rys/uslugi/DHCP/33.png}{Dodanie nowego zakresu}{DHCP33}
+\fg{rys/uslugi/DHCP/34.png}{Konfiguracja zakresu – nazwa}{DHCP34}
+\clearpage
+\fg{rys/uslugi/DHCP/35.png}{Konfiguracja zakresu – zakres adresów}{DHCP35}
+\fg{rys/uslugi/DHCP/36.png}{Konfiguracja wykluczeń}{DHCP36}
+\clearpage
+\fg{rys/uslugi/DHCP/37.png}{Konfiguracja zakresu – długość dzierżawy}{DHCP37}
+\fg{rys/uslugi/DHCP/38.png}{Potwierdzenie konfiguracji opcji DHCP}{DHCP38}
+\clearpage
+\fg{rys/uslugi/DHCP/39.png}{Konfiguracja zakresu – brama domyślna}{DHCP39}
+\fg{rys/uslugi/DHCP/40.png}{Konfiguracja zakresu – serwer DNS}{DHCP40}
+\clearpage
+\fg{rys/uslugi/DHCP/41.png}{Konfiguracja zakresu – serwer WINS}{DHCP41}
+\fg{rys/uslugi/DHCP/42.png}{Aktywacja zakresu}{DHCP42}
+\clearpage
+\fg{rys/uslugi/DHCP/43.png}{Sprawdzenie działania DHCP – cz. 1}{DHCP43}
+\fg{rys/uslugi/DHCP/44.png}{Sprawdzenie działania DHCP – cz. 2}{DHCP44}
 
 
 \subsection{Instalacja usługi Windows Deployment Services (WDS)}
+
 
 \subsection{Insrallacja serwera wydruku}
 
