@@ -217,13 +217,54 @@ Skrypt jest efektywnym narzędziem do automatyzacji procesu tworzenia kont użyt
 \ListingFile{Dane}{Dane}
 \clearpage
 
+\subsection{Instalacja usługi RAID 1}
+Następnie przystąpiono do instalacji usługi RAID 1 na serwerze \texttt{SDC06}. Aby to zrobić, należy wykonać następujące kroki:
+\begin{enumerate}
+	\item Dodanie dwóch dysków o poejmnośći 30GB do maszyny wirtualnej w programie VirtualBox\footnote{Strona projektu VirtualBox\cite{VirtualBox}}. \OznaczZdjecie{raid1-1}
+	\item Otwarcie \texttt{Zarządzania dyskami} i inicjalizacja dysków \OznaczZdjecie{raid1-2}
+	\item Wynik inicjalizacji dysków. \OznaczZdjecie{raid1-3}
+	\item Wybranie \texttt{New Mirrored Volume} jako typu RAID. \OznaczZdjecie{raid1-4}
+	\item Dodanie drugiego dysku do stworzenia macierzy. \OznaczZdjecie{raid1-5}
+	\item Wynik dodania drugiego dysku. \OznaczZdjecie{raid1-6}
+	\item Brak przypisanej litery do macierzy RAID 1. \OznaczZdjecie{raid1-7}
+	\item Wybranie braku formatowania. \OznaczZdjecie{raid1-8}
+	\item Ekran potwierdzenia. \OznaczZdjecie{raid1-9}
+	\item Wynik stworzenia macierzy. \OznaczZdjecie{raid1-10}
+	\item Okno dodania litery dla RAID 1. \OznaczZdjecie{raid1-11}
+	\item Ustawienie litery na \texttt{R:}. \OznaczZdjecie{raid1-12}
+	\item Zakończenie konfigurowania macierzy – wynik. \OznaczZdjecie{raid1-13}
+	\item Nadanie etykiety RAID 1. \OznaczZdjecie{raid1-14}
+\end{enumerate}
+
+\fg{rys/uslugi/RAID1/1.png}{Dodanie dysku do maszyny wirtualnej}{raid1-1}
+\fg{rys/uslugi/RAID1/2.png}{Otwarcie Zarządzania dyskami i inicjalizacja dysków}{raid1-2}
+\clearpage
+\fg{rys/uslugi/RAID1/3.png}{Wynik inicjalizacji dysków}{raid1-3}
+\fg{rys/uslugi/RAID1/4.png}{Wybranie New Mirrored Volume}{raid1-4}
+\clearpage
+\fg{rys/uslugi/RAID1/5.png}{Dodanie drugiego dysku w konfiguratorze}{raid1-5}
+\fg{rys/uslugi/RAID1/6.png}{Wynik dodania drugiego dysku w konfuguratorze}{raid1-6}
+\clearpage
+\fg{rys/uslugi/RAID1/7.png}{Brak przypisania litery do macierzy Raid1}{raid1-7}
+\fg{rys/uslugi/RAID1/8.png}{Wybranie braku formatowania}{raid1-8}
+\clearpage
+\fg{rys/uslugi/RAID1/9.png}{Ekran potwierdzenia}{raid1-9}
+\fg{rys/uslugi/RAID1/10.png}{Wynik stworzenia macierzy}{raid1-10}
+\clearpage
+\fg{rys/uslugi/RAID1/11.png}{Okno dodania litery dla raid1}{raid1-11}
+\clearpage
+\fg{rys/uslugi/RAID1/12.png}{Ustawienie litery na R:}{raid1-12}
+\fg{rys/uslugi/RAID1/13.png}{Wynik ustawienia litery}{raid1-13}
+\fg{rys/uslugi/RAID1/14.png}{Nadanie etykiety RAID1}{raid1-14}
+
+
+
 \subsection{Instalacja usługi Dynamic Host Configuration Protocol (DHCP)}
 
 \subsection{Instalacja usługi Group Policy Objects (GPO)}
 
 \subsection{Instalacja usługi Windows Deployment Services (WDS)}
 
-\subsection{Instalacja usługi RAID 1}
 
 \subsection{Instalacja serwera WWW}
 
