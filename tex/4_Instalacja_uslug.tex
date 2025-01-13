@@ -373,6 +373,89 @@ Na serwerze \texttt{SDC06} za pomocą narzędzia \texttt{Server Manager} zainsta
 \subsection{SFS – instalacja i konfiguracja}
 Na serwerze \texttt{SDC06} zainstalowano usługę SFS (Scale-Out File Server) w celu udostępnienia zasobów sieciowych dla klastra failover.
 
+\fg{rys/uslugi/SFS/1.png}{Instalacja oparta na rolach lub funkcjach}{SFS1}
+\fg{rys/uslugi/SFS/2.png}{Wybór serwerów}{SFS2}
+\clearpage
+\fg{rys/uslugi/SFS/3.png}{Wybranie funkcji File Server}{SFS3}
+\fg{rys/uslugi/SFS/4.png}{Rozpoczęcie instalacji}{SFS4}
+\clearpage
+\fg{rys/uslugi/SFS/5.png}{Zakończenie instalacji}{SFS5}
+\fg{rys/uslugi/SFS/6.png}{Wybór dysku do konfiguracji $\rightarrow$ R: w New iSCSI Virtual Disk}{SFS6}
+\clearpage
+\fg{rys/uslugi/SFS/7.png}{Wybór nazwy dysku $\rightarrow$ przestrzenFS}{SFS7}
+\fg{rys/uslugi/SFS/8.png}{Wybór rozmiaru dysku $\rightarrow$ 10GB}{SFS8}
+\clearpage
+\fg{rys/uslugi/SFS/9.png}{Nowy cel}{SFS9}
+\fg{rys/uslugi/SFS/10.png}{Nazwa celu dyskFS}{SFS10}
+\clearpage
+\fg{rys/uslugi/SFS/11.png}{Dodanie serwerów dostępu SN1 i SN2}{SFS11}
+\fg{rys/uslugi/SFS/12.png}{Ekran potwierdzenia ustawień iSCSI}{SFS12}
+\clearpage
+\fg{rys/uslugi/SFS/13.png}{Ekran z wynikami}{SFS13}
+\fg{rys/uslugi/SFS/14.png}{Pierwszy ekran kreatora roli klastra}{SFS14}
+\clearpage
+\fg{rys/uslugi/SFS/15.png}{Wybór roli file server}{SFS15}
+\fg{rys/uslugi/SFS/16.png}{Wybranie typu FS}{SFS16}
+\clearpage
+\fg{rys/uslugi/SFS/17.png}{Nazwa serwera i adresu IP}{SFS17}
+\fg{rys/uslugi/SFS/18.png}{Przestawienie dysku na online w SN1}{SFS22}
+\clearpage
+\fg{rys/uslugi/SFS/19.png}{Inicjalizacja dysku}{SFS23}
+\fg{rys/uslugi/SFS/20.png}{Formatowanie i nadanie etykiety dysku}{SFS24}
+\clearpage
+\fg{rys/uslugi/SFS/21.png}{Dodanie dysku do klastra}{SFS25}
+\fg{rys/uslugi/SFS/22.png}{Wynik dodania dysku do klastra}{SFS26}
+\clearpage
+\fg{rys/uslugi/SFS/23.png}{Kontynuacja dodawania roli FS dodanie dysku klastra do roli}{SFS27}
+\fg{rys/uslugi/SFS/24.png}{Ekran potwierdzenia}{SFS28}
+\clearpage
+\fg{rys/uslugi/SFS/25.png}{podsumowanie dodania roli FS}{SFS29}
+\fg{rys/uslugi/SFS/26.png}{Add file share z poziomu Menadżera klastra}{SFS30}
+\clearpage
+\fg{rys/uslugi/SFS/27.png}{Wybór typu udziału}{SFS31}
+\fg{rys/uslugi/SFS/28.png}{Wybór dysku do udziału}{SFS32}
+\clearpage
+\fg{rys/uslugi/SFS/29.png}{Wybór nazwy udziału – Wspolny}{SFS33}
+\fg{rys/uslugi/SFS/30.png}{Wybór ustawień udziału}{SFS34}
+\clearpage
+\fg{rys/uslugi/SFS/31.png}{Ekran premisji}{SFS35}
+\fg{rys/uslugi/SFS/32.png}{Ekran potwierdzenia}{SFS36}
+\clearpage
+\fg{rys/uslugi/SFS/33.png}{Wynik dodania udziału}{SFS37}
+\fg{rys/uslugi/SFS/34.png}{Sprawdzenie działania udziału – cz. 1}{SFS38}
+\clearpage
+\fg{rys/uslugi/SFS/35.png}{Sprawdzenie działania udziału – cz. 2}{SFS39}
+\fg{rys/uslugi/SFS/36.png}{Sprawdzenie działania udziału – cz. 3}{SFS40}
+\clearpage
+\fg{rys/uslugi/SFS/37.png}{Wybór nazwy udziału – Kadry}{SFS41}
+\fg{rys/uslugi/SFS/38.png}{Wybór ustawień udziału}{SFS34}
+\clearpage
+\fg{rys/uslugi/SFS/39.png}{Usunięcie premisji}{SFS35}
+\fg{rys/uslugi/SFS/40.png}{Nowe premisje}{SFS36}
+\clearpage
+\fg{rys/uslugi/SFS/41.png}{Wynik dodania udziału}{SFS37}
+\fg{rys/uslugi/SFS/42.png}{Sprawdzenie działania udziału – Kadry}{SFS38}
+\clearpage
+\fg{rys/uslugi/SFS/43.png}{Wybór nazwy udziału – Ksiegowosc}{SFS41}
+\fg{rys/uslugi/SFS/44.png}{Konwersja dziedziczonych premisji na bezpośrednie}{SFS34}
+\clearpage
+\fg{rys/uslugi/SFS/45.png}{Usunięcie dziedziczonych premisji}{SFS35}
+\fg{rys/uslugi/SFS/46.png}{Nowe premisje}{SFS36}
+\clearpage
+\fg{rys/uslugi/SFS/47.png}{Sprawdzenie działania udziału – Księgowość}{SFS42}
+\fg{rys/uslugi/SFS/48.png}{Wybór nazwy udziału – Marketing}{SFS43}
+\clearpage
+\fg{rys/uslugi/SFS/49.png}{Nowe premisje}{SFS46}
+\fg{rys/uslugi/SFS/50.png}{Wynik dodania udziału}{SFS47}
+\clearpage
+\fg{rys/uslugi/SFS/51.png}{Wybór nazwy udziału – Programista}{SFS43}
+\fg{rys/uslugi/SFS/52.png}{Nowe premisje}{SFS46}
+\clearpage
+\fg{rys/uslugi/SFS/53.png}{Wynik dodania udziału}{SFS47}
+\fg{rys/uslugi/SFS/54.png}{Wybór nazwy udziału – IT}{SFS43}
+\clearpage
+\fg{rys/uslugi/SFS/55.png}{Nowe premisje}{SFS46}
+\fg{rys/uslugi/SFS/56.png}{Wynik dodania udziału}{SFS47}
 
 \subsection{Instalacja usługi Group Policy Objects (GPO)}
 
