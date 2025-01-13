@@ -320,11 +320,64 @@ W tym etapie wystąpił błąd, a następnie w dalszej części projektu dysk or
 \clearpage
 \fg{rys/uslugi/iSCSI/23.png}{Wynik działania dysku}{iscsi23}
 
+\subsection{Instalacja klastra failover}
+Na serwerze \texttt{SDC06} za pomocą narzędzia \texttt{Server Manager} zainstalowano rolę Failover Clustering.
 
+\fg{rys/Klaster/1.png}{Usunięcie dysku iSCSI dysk1}{Klaster1}
+\fg{rys/Klaster/2.png}{Wybór dysku do konfiguracji $\rightarrow$ R: w New iSCSI Virtual Disk}{Klaster2}
+\clearpage
+\fg{rys/Klaster/3.png}{Wybór nazwy dysku $\rightarrow$ klaster}{Klaster3}
+\fg{rys/Klaster/4.png}{Wybór rozmiaru dysku $\rightarrow$ 30GB}{Klaster4}
+\clearpage
+\fg{rys/Klaster/5.png}{Nowy cel}{Klaster5}
+\fg{rys/Klaster/6.png}{Nazwa celu klaster-SN1-SN2}{Klaster6}
+\clearpage
+\fg{rys/Klaster/7.png}{Dodanie serwerów dostępu SN1 i SN2}{Klaster7}
+\fg{rys/Klaster/8.png}{Ekran Enable Authentication – domyślne ustawienia}{Klaster8}
+\clearpage
+\fg{rys/Klaster/9.png}{Ekran potwierdzenia ustawień iSCSI}{Klaster9}
+\fg{rys/Klaster/10.png}{Ekran z wynikami}{Klaster10}
+\clearpage
+\fg{rys/Klaster/11.png}{Połączenie z dyskiem na SN1 i SN2}{Klaster11}
+\fg{rys/Klaster/12.png}{Automatyczna konfiguracja dysku na SN1 i SN2}{Klaster12}
+\clearpage
+\fg{rys/Klaster/13.png}{Dodanie serwerów z poziomu SDC06 dla łatwiejszego zarządzania}{Klaster13}
+\fg{rys/Klaster/14.png}{Wyszukanie serwerów}{Klaster14}
+\clearpage
+\fg{rys/Klaster/15.png}{Dodanie SN1 i SN2}{Klaster15}
+\fg{rys/Klaster/16.png}{Add roles And Features (SN1--06) z poziomu SDC06}{Klaster16}
+\clearpage
+\fg{rys/Klaster/17.png}{Instalacja oparta na rolach lub funkcjach}{Klaster17}
+\fg{rys/Klaster/18.png}{Wybór serwerów}{Klaster18}
+\clearpage
+\fg{rys/Klaster/19.png}{Wybranie funcji Failover}{Klaster21}
+\fg{rys/Klaster/20.png}{Rozpoczęcie instalacji}{Klaster22}
+\clearpage
+\fg{rys/Klaster/21.png}{Zakończenie instalacji}{Klaster19}
+\fg{rys/Klaster/22.png}{Przestawienie dysku na online w SN1}{Klaster23}
+\clearpage
+\fg{rys/Klaster/23.png}{inicjalizacja dysku}{Klaster24}
+\fg{rys/Klaster/24.png}{Formanie i nadanie etykiety dysku}{Klaster20}
+\clearpage
+\fg{rys/Klaster/25.png}{Sprawdzenie działania dysku na SN1 i SN2}{Klaster25}
+\fg{rys/Klaster/26.png}{Otworzenie kreatora klastra i wybranie SN1 i SN2}{Klaster26}
+\clearpage
+\fg{rys/Klaster/27.png}{Nazwa klastra i nadanie IP}{Klaster27}
+\fg{rys/Klaster/28.png}{Ekran podsumowania}{Klaster28}
+\clearpage
+\fg{rys/Klaster/29.png}{Ekran przetwarzania klastra}{Klaster29}
+\fg{rys/Klaster/30.png}{Ekran podsumowania}{Klaster30}
+\clearpage
+\fg{rys/Klaster/31.png}{Sprawdzenie działania klastra}{Klaster31}
+
+\subsection{SFS – instalacja i konfiguracja}
+Na serwerze \texttt{SDC06} zainstalowano usługę SFS (Scale-Out File Server) w celu udostępnienia zasobów sieciowych dla klastra failover.
+
+
+\subsection{Instalacja usługi Group Policy Objects (GPO)}
 
 \subsection{Instalacja usługi Dynamic Host Configuration Protocol (DHCP)}
 
-\subsection{Instalacja usługi Group Policy Objects (GPO)}
 
 \subsection{Instalacja usługi Windows Deployment Services (WDS)}
 
