@@ -184,7 +184,7 @@ Skrypt iteruje przez każdy wiersz pliku CSV:
 \paragraph{Zarządzanie użytkownikami}
 Przy wykryciu istniejącej nazwy użytkownika:
 \begin{itemize}
-    \item Dodaje losowy numer (1-999)
+    \item Dodaje losowy numer (1–999)
     \item Aktualizuje adres email
     \item Sprawdza ponownie unikalność
 \end{itemize}
@@ -220,42 +220,105 @@ Skrypt jest efektywnym narzędziem do automatyzacji procesu tworzenia kont użyt
 \subsection{Instalacja usługi RAID 1}
 Następnie przystąpiono do instalacji usługi RAID 1 na serwerze \texttt{SDC06}. Aby to zrobić, należy wykonać następujące kroki:
 \begin{enumerate}
-	\item Dodanie dwóch dysków o poejmnośći 30GB do maszyny wirtualnej w programie VirtualBox\footnote{Strona projektu VirtualBox\cite{VirtualBox}}. \OznaczZdjecie{raid1-1}
-	\item Otwarcie \texttt{Zarządzania dyskami} i inicjalizacja dysków \OznaczZdjecie{raid1-2}
-	\item Wynik inicjalizacji dysków. \OznaczZdjecie{raid1-3}
-	\item Wybranie \texttt{New Mirrored Volume} jako typu RAID. \OznaczZdjecie{raid1-4}
-	\item Dodanie drugiego dysku do stworzenia macierzy. \OznaczZdjecie{raid1-5}
-	\item Wynik dodania drugiego dysku. \OznaczZdjecie{raid1-6}
-	\item Brak przypisanej litery do macierzy RAID 1. \OznaczZdjecie{raid1-7}
-	\item Wybranie braku formatowania. \OznaczZdjecie{raid1-8}
-	\item Ekran potwierdzenia. \OznaczZdjecie{raid1-9}
-	\item Wynik stworzenia macierzy. \OznaczZdjecie{raid1-10}
-	\item Okno dodania litery dla RAID 1. \OznaczZdjecie{raid1-11}
-	\item Ustawienie litery na \texttt{R:}. \OznaczZdjecie{raid1-12}
-	\item Zakończenie konfigurowania macierzy – wynik. \OznaczZdjecie{raid1-13}
-	\item Nadanie etykiety RAID 1. \OznaczZdjecie{raid1-14}
+	\item Dodanie dwóch dysków o poejmnośći 30GB do maszyny wirtualnej w programie VirtualBox\footnote{Strona projektu VirtualBox\cite{VirtualBox}}. \OznaczZdjecie{raid1-1} %chktex 8
+	\item Otwarcie \texttt{Zarządzania dyskami} i inicjalizacja dysków \OznaczZdjecie{raid1-2} %chktex 8
+	\item Wynik inicjalizacji dysków. \OznaczZdjecie{raid1-3} %chktex 8
+	\item Wybranie \texttt{New Mirrored Volume} jako typu RAID. \OznaczZdjecie{raid1-4} %chktex 8
+	\item Dodanie drugiego dysku do stworzenia macierzy. \OznaczZdjecie{raid1-5} %chktex 8
+	\item Wynik dodania drugiego dysku. \OznaczZdjecie{raid1-6} %chktex 8
+	\item Brak przypisanej litery do macierzy RAID 1. \OznaczZdjecie{raid1-7} %chktex 8
+	\item Wybranie braku formatowania. \OznaczZdjecie{raid1-8} %chktex 8
+	\item Ekran potwierdzenia. \OznaczZdjecie{raid1-9} %chktex 8
+	\item Wynik stworzenia macierzy. \OznaczZdjecie{raid1-10} %chktex 8
+	\item Okno dodania litery dla RAID 1. \OznaczZdjecie{raid1-11} %chktex 8
+	\item Ustawienie litery na \texttt{R:}. \OznaczZdjecie{raid1-12} %chktex 8
+	\item Zakończenie konfigurowania macierzy – wynik. \OznaczZdjecie{raid1-13} %chktex 8
+	\item Nadanie etykiety RAID 1. \OznaczZdjecie{raid1-14} %chktex 8
 \end{enumerate}
 
-\fg{rys/uslugi/RAID1/1.png}{Dodanie dysku do maszyny wirtualnej}{raid1-1}
-\fg{rys/uslugi/RAID1/2.png}{Otwarcie Zarządzania dyskami i inicjalizacja dysków}{raid1-2}
+\fg{rys/uslugi/RAID1/1.png}{Dodanie dysku do maszyny wirtualnej}{raid1-1} %chktex 8
+\fg{rys/uslugi/RAID1/2.png}{Otwarcie Zarządzania dyskami i inicjalizacja dysków}{raid1-2} %chktex 8
 \clearpage
-\fg{rys/uslugi/RAID1/3.png}{Wynik inicjalizacji dysków}{raid1-3}
-\fg{rys/uslugi/RAID1/4.png}{Wybranie New Mirrored Volume}{raid1-4}
+\fg{rys/uslugi/RAID1/3.png}{Wynik inicjalizacji dysków}{raid1-3} %chktex 8
+\fg{rys/uslugi/RAID1/4.png}{Wybranie New Mirrored Volume}{raid1-4} %chktex 8
 \clearpage
-\fg{rys/uslugi/RAID1/5.png}{Dodanie drugiego dysku w konfiguratorze}{raid1-5}
-\fg{rys/uslugi/RAID1/6.png}{Wynik dodania drugiego dysku w konfuguratorze}{raid1-6}
+\fg{rys/uslugi/RAID1/5.png}{Dodanie drugiego dysku w konfiguratorze}{raid1-5} %chktex 8
+\fg{rys/uslugi/RAID1/6.png}{Wynik dodania drugiego dysku w konfuguratorze}{raid1-6} %chktex 8
 \clearpage
-\fg{rys/uslugi/RAID1/7.png}{Brak przypisania litery do macierzy Raid1}{raid1-7}
-\fg{rys/uslugi/RAID1/8.png}{Wybranie braku formatowania}{raid1-8}
+\fg{rys/uslugi/RAID1/7.png}{Brak przypisania litery do macierzy Raid1}{raid1-7} %chktex 8
+\fg{rys/uslugi/RAID1/8.png}{Wybranie braku formatowania}{raid1-8} %chktex 8
 \clearpage
-\fg{rys/uslugi/RAID1/9.png}{Ekran potwierdzenia}{raid1-9}
-\fg{rys/uslugi/RAID1/10.png}{Wynik stworzenia macierzy}{raid1-10}
+\fg{rys/uslugi/RAID1/9.png}{Ekran potwierdzenia}{raid1-9} %chktex 8
+\fg{rys/uslugi/RAID1/10.png}{Wynik stworzenia macierzy}{raid1-10} %chktex 8
 \clearpage
-\fg{rys/uslugi/RAID1/11.png}{Okno dodania litery dla raid1}{raid1-11}
+\fg{rys/uslugi/RAID1/11.png}{Okno dodania litery dla raid1}{raid1-11} %chktex 8
 \clearpage
-\fg{rys/uslugi/RAID1/12.png}{Ustawienie litery na R:}{raid1-12}
-\fg{rys/uslugi/RAID1/13.png}{Wynik ustawienia litery}{raid1-13}
-\fg{rys/uslugi/RAID1/14.png}{Nadanie etykiety RAID1}{raid1-14}
+\fg{rys/uslugi/RAID1/12.png}{Ustawienie litery na R:}{raid1-12} %chktex 8
+\fg{rys/uslugi/RAID1/13.png}{Wynik ustawienia litery}{raid1-13} %chktex 8
+\clearpage
+\fg{rys/uslugi/RAID1/14.png}{Nadanie etykiety RAID1}{raid1-14} %chktex 8
+\clearpage
+
+\subsection{Instalacja usługi iSCSI target server}
+Instalacja usługi iSCSI umożliwia konfigurację urządzeń pamięci masowej przez sieć, co jest szczególnie przydatne w środowiskach wirtualnych i serwerowych. Poniżej przedstawiono kroki instalacji usługi iSCSI na serwerze \texttt{SDC06}:
+\begin{enumerate}
+	\item Otwarcie \texttt{Server Manager}
+	\item Wybranie \texttt{Manage} $\rightarrow$ \texttt{Add Roles and Features}
+	\item Kliknięcie \texttt{Next}
+	\item Wybranie \texttt{Role-based or feature-based installation}. \OznaczZdjecie{iscsi1}
+	\item Wybranie serwera \texttt{SDC06} i kliknięcie \texttt{Next}. \OznaczZdjecie{iscsi2}
+	\item Wybranie roli \texttt{iSCSI Target Server}.\OznaczZdjecie{iscsi3} i \OznaczZdjecie[rysunek]{iscsi4}
+	\item Kliknięcie \texttt{Next} na ekranie z funkcjami. \OznaczZdjecie{iscsi5}
+	\item Kliknięcie \texttt{Next} na ekranie z informacjami dotyczącymi iSCSI.
+	\item Kliknięcie \texttt{Next} na ekranie podsumowania. \OznaczZdjecie{iscsi6}
+	\item Kliknięcie \texttt{Install} na ekranie z postępem instalacji. \OznaczZdjecie{iscsi7}
+	\item Otwarcie \texttt{iSCSI Target Server} z poziomu \texttt{Server Manager} \OznaczZdjecie{iscsi8}
+	\item Kliknięcie \texttt{New iSCSI Virtual Disk} \OznaczZdjecie{iscsi9}
+	\item Wybranie dysku do konfiguracji $\rightarrow$ \texttt{R:} \OznaczZdjecie{iscsi10}
+	\item Wybranie nazwy dysku $\rightarrow$ \texttt{Dysk1} \OznaczZdjecie{iscsi11}
+	\item Wybranie rozmiaru dysku $\rightarrow$ 30GB \OznaczZdjecie{iscsi12}
+	\item Wybranie nazwy celu $\rightarrow$ \texttt{dysk1-target} \OznaczZdjecie{iscsi13}
+	\item Wybranie serwera dostępu $\rightarrow$ \texttt{stacja kliencka} \OznaczZdjecie{iscsi14}
+	\item Kliknięcie \texttt{Next} na ekranie z funkcjami. \OznaczZdjecie{iscsi15}
+	\item Kliknięcie \texttt{Next} na ekranie z informacjami dotyczącymi iSCSI.
+	\item 
+\end{enumerate}
+
+\fg{rys/uslugi/iSCSI/1.png}{Instalacja oparta na rolach lub funkcjach}{iscsi1}
+\fg{rys/uslugi/iSCSI/2.png}{Ekran z wyborem SDC}{iscsi2}
+\clearpage
+\fg{rys/uslugi/iSCSI/3.png}{Dodanie usługi iSCSI}{iscsi3}
+\fg{rys/uslugi/iSCSI/4.png}{Ekran podsumowania}{iscsi4}
+\clearpage
+\fg{rys/uslugi/iSCSI/5.png}{Otworzenie New iSCSI Virtual Disk}{iscsi5}
+\fg{rys/uslugi/iSCSI/6.png}{Wybór dysku do konfiguracji $\rightarrow$ R:}{iscsi6}
+\clearpage
+\fg{rys/uslugi/iSCSI/7.png}{Wybór nazwy dysku $\rightarrow$ Dysk1}{iscsi7}
+\fg{rys/uslugi/iSCSI/8.png}{Wybór rozmiaru dysku $\rightarrow$ 30GB}{iscsi8}
+\clearpage
+\fg{rys/uslugi/iSCSI/9.png}{Wybór nazwy celu $\rightarrow$ dysk1-target}{iscsi9}
+W tym etapie wystąpił błąd, a następnie w dalszej części projektu dysk oraz cel zostały usunięte, ponieważ nie były częścią pierwotnych założeń projektu.
+\fg{rys/uslugi/iSCSI/10.png}{Wybór serwera dostępu $\rightarrow$ stacja kliencka}{iscsi10}
+\clearpage
+\fg{rys/uslugi/iSCSI/11.png}{Ekran potwierdzenia ustawień iSCSI}{iscsi11}
+\fg{rys/uslugi/iSCSI/12.png}{Wynik konfiguracji iSCSI}{iscsi12}
+\clearpage
+\fg{rys/uslugi/iSCSI/13.png}{Kliknięcie na właściwości celu z poziomu Server Manager}{iscsi13}
+\fg{rys/uslugi/iSCSI/14.png}{Brak stacji klieckiej}{iscsi14}
+\clearpage
+\fg{rys/uslugi/iSCSI/15.png}{Otworzenie iSCSI Inicjator na stacji klieckiej}{iscsi15}
+\fg{rys/uslugi/iSCSI/16.png}{Dodanie adresu ip serwera SDC06 w zakładce Discover Portal}{iscsi16}
+\clearpage
+\fg{rys/uslugi/iSCSI/17.png}{Powrót na SDC06 w celu dodania stacji klienckiej jako inicjatora}{iscsi17}
+\fg{rys/uslugi/iSCSI/18.png}{Powrót na komputer użytkownika w celu odświeżania wykrywanych urządzeń}{iscsi18}
+\clearpage
+\fg{rys/uslugi/iSCSI/19.png}{Połączenie z wykrytym dyskiem}{iscsi19}
+\fg{rys/uslugi/iSCSI/20.png}{Automatyczna konfiguracja dysku w zakładce Woluminy i urządzenia}{iscsi20}
+\clearpage
+\fg{rys/uslugi/iSCSI/21.png}{Inicjalizacja dysku}{iscsi21}
+\fg{rys/uslugi/iSCSI/22.png}{Wybór typu partycji}{iscsi22}
+\clearpage
+\fg{rys/uslugi/iSCSI/23.png}{Wynik działania dysku}{iscsi23}
 
 
 
