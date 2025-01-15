@@ -2,4 +2,32 @@
 \section{Wnioski}	%5
 %Npisać wnioski końcowe z przeprowadzonego projektu, 
 
+\subsection{Wnioski ogólne}
+Podczas realizacji klastra dysk został podzielony z uwagi na wymogi usług SFS oraz DHCP, które wymagają dostępu do dysku. W trakcie konfiguracji usługi DHCP zauważyłem, że dysk został już wykorzystany dlatego dodałem kolejny do maszyny wirtualnej, co wymagało dostosowania dalszych działań. Proces realizacji klastra napotkał pewne trudności związane z jego konfiguracją, jednak udało mi się skutecznie rozwiązać pojawiające się problemy.
 
+Realizując projekt, zdobyłem cenne doświadczenie w zakresie konfiguracji serwera Windows Server 2022 oraz uruchamiania na nim różnych usług. Projekt okazał się bardziej skomplikowany niż poprzedni, ale mimo wyzwań udało mi się go z powodzeniem zakończyć.
+
+Moim zdaniem, Windows jest systemem operacyjnym o rozbudowanej strukturze, co sprawia, że konfiguracja usług może być czasochłonna. Aby uzyskać dostęp do poszczególnych ustawień, konieczne jest przejście przez wiele okienek i menu, co bywa uciążliwe i wymaga cierpliwości.
+
+
+
+\subsection{Zastosowanie technologii AD DS i GPO}
+Projekt wykazał, że za pomocą usługi Active Directory Domain Services (AD DS) można skutecznie zarządzać użytkownikami i grupami w domenie. Automatyczne tworzenie kont użytkowników i grup przez skrypty PowerShell usprawniło proces zarządzania. Ponadto, zastosowanie zasad grupowych (GPO) do mapowania zasobów sieciowych na stacjach roboczych pozwoliło na automatyzację tego procesu, co znacznie ułatwiło codzienną administrację.
+
+\subsection{Implementacja RAID-5 oraz iSCSI}
+Zrealizowanie macierzy RAID-5 z przestrzenią dyskową 30 GB w oparciu o iSCSI okazało się skutecznym rozwiązaniem w zakresie zapewnienia dostępności zasobów. Zastosowanie tej technologii pozwoliło na bezpieczne przechowywanie danych, a także na łatwą rozbudowę przestrzeni dyskowej w przyszłości. Mechanizm pracy awaryjnej (Failover Clustering) pozwolił na zapewnienie wysokiej dostępności zasobów sieciowych, co jest kluczowe w przypadku awarii jednego z serwerów.
+
+\subsection{Wdrażanie DHCP i serwera plików}
+Uruchomienie serwera DHCP na klastrze pracy awaryjnej (Failover Clustering) pozwoliło na efektywne zarządzanie adresacją IP w sieci, a także na automatyczne przypisywanie adresów IP stacjom roboczym. Z kolei wdrożenie serwera plików pozwoliło na centralne zarządzanie danymi, które mogą być współdzielone między pracownikami. Zasoby te były udostępnione w sposób przejrzysty i wygodny dla użytkowników.
+
+\subsection{Zastosowanie serwera WWW i WordPress}
+Wdrożenie serwera WWW z rolą IIS oraz instalacja systemu WordPress na tym serwerze pozwoliło na stworzenie firmowej strony internetowej. Dzięki tej technologii firma zyskała profesjonalną stronę internetową, która jest łatwa w zarządzaniu oraz umożliwia bieżące publikowanie treści.
+
+\subsection{Automatyzacja instalacji i konfiguracji stacji roboczych}
+Zrealizowanie instalacji systemów operacyjnych na stacjach roboczych za pomocą obrazu udostępnionego na serwerze okazało się efektywnym rozwiązaniem, które znacząco skróciło czas konfiguracji nowych urządzeń w firmie. Dodatkowo, automatyczne mapowanie dysków na podstawie grupy wydziałowej i ustawienie zmiennych środowiskowych za pomocą GPO pozwoliło na minimalizację błędów ludzkich i zapewnienie spójności konfiguracji w firmie.
+
+\subsection{Podsumowanie}
+Projekt pokazał, jak ważna jest integracja różnych usług IT, takich jak Active Directory, DHCP, RAID, serwer WWW i skrypty PowerShell w kontekście tworzenia kompleksowego systemu informatycznego w przedsiębiorstwie. Zastosowane rozwiązania zapewniły wysoką dostępność usług, automatyzację procesów oraz łatwość w zarządzaniu zasobami i użytkownikami. Implementacja systemu w oparciu o technologie Microsoft Windows Server 2022 oraz PowerShell okazała się skuteczna.
+
+\subsection{Możliwości rozwoju}
+W przyszłości projekt może zostać rozbudowany o dodatkowe funkcje, takie jak integracja z chmurą, wdrożenie kopii zapasowych w systemie, czy rozbudowa infrastruktury o nowe usługi (np. serwer poczty elektronicznej, systemy monitoringu). Warto również rozważyć wdrożenie rozwiązań zabezpieczających przed atakami z sieci oraz rozbudowę monitorowania i audytowania aktywności użytkowników.

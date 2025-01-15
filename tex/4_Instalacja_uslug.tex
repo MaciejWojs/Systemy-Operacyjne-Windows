@@ -217,6 +217,8 @@ Skrypt jest efektywnym narzędziem do automatyzacji procesu tworzenia kont użyt
 \ListingFile{Dane}{Dane}
 \clearpage
 
+\fg{rys/99.png}{Poprawiona wersja skryptu}{skrypt1}
+
 \subsection{Instalacja usługi RAID 1}
 Następnie przystąpiono do instalacji usługi RAID 1 na serwerze \texttt{SDC06}. Aby to zrobić, należy wykonać następujące kroki:
 \begin{enumerate}
@@ -688,7 +690,63 @@ Na klastrze zainstalowano usługę Dynamic Host Configuration Protocol (DHCP) w 
 \fg{rys/uslugi/IIS/15.png}{Sprawdzenie działania strony pod adresem binarybuilders.ad}{WWW14}
 
 
-
-
 \subsection{Instalacja WordPress}
-
+\fg{rys/uslugi/WordPress/1.png}{Instalacja myqsl-server}{WordPress1}
+\fg{rys/uslugi/WordPress/2.png}{Instalacja myqsl zakończona pomyślnie}{WordPress1}
+\clearpage
+\fg{rys/uslugi/WordPress/3.png}{Stworzenie bazy danych w CLI}{WordPress2}
+\fg{rys/uslugi/WordPress/4.png}{Stworzenie użytkownika i nadanie mu uprawnień}{WordPress3}
+\clearpage
+\fg{rys/uslugi/WordPress/5.png}{Pobranie WordPressa}{WordPress4}
+\fg{rys/uslugi/WordPress/6.png}{Rozpakowanie WordPressa}{WordPress5}
+\clearpage
+\fg{rys/uslugi/WordPress/7.png}{Przeniesienie WordPressa do katalogu C:\textbackslash wordpress}{WordPress6}
+\fg{rys/uslugi/WordPress/8.png}{Uruchomienie IIS Manager}{WordPress7}
+\clearpage
+\fg{rys/uslugi/WordPress/9.png}{Dodanie nowej strony}{WordPress8}
+\fg{rys/uslugi/WordPress/10.png}{Konfiguracja strony – nazwa, ścieżka, host}{WordPress9}
+\clearpage
+\fg{rys/uslugi/WordPress/11.png}{Zmiana nazwy pliku wp-config-sample.php na wp-config.php}{WordPress11}
+\fg{rys/uslugi/WordPress/12.png}{Konfiguracja pliku wp-config.php}{WordPress12}
+\clearpage
+\fg{rys/uslugi/WordPress/13.png}{Otworzenie konfiguratora dodawania funkcji i ról}{WordPress13}
+\fg{rys/uslugi/WordPress/14.png}{Instalacja oparta na rolach lub funkcjach}{WordPress14}
+\clearpage
+\fg{rys/uslugi/WordPress/15.png}{Wybór serwera SDC06}{WordPress15}
+\fg{rys/uslugi/WordPress/16.png}{Wybranie funkcji Web Server (IIS) – modyfikacja instalacji dodanie CGI}{WordPress16}
+\clearpage
+\fg{rys/uslugi/WordPress/17.png}{Funkcje bez zmian}{WordPress17}
+\fg{rys/uslugi/WordPress/18.png}{Ekran potwierdzenia}{WordPress18}
+\clearpage
+\fg{rys/uslugi/WordPress/19.png}{Instalacja zakończona sukcesem}{WordPress19}
+\fg{rys/uslugi/WordPress/20.png}{Pobranie PHP}{WordPress20}
+\clearpage
+\fg{rys/uslugi/WordPress/21.png}{Rozpakowanie PHP}{WordPress21}
+\fg{rys/uslugi/WordPress/22.png}{Przeniesienie PHP do katalogu C:\textbackslash php}{WordPress22}
+\clearpage
+\fg{rys/uslugi/WordPress/23.png}{modyfikacja zmiennej PATH – dodanie ścieżki do PHP}{WordPress26}
+\clearpage	
+\fg{rys/uslugi/WordPress/24.png}{Modyfikacja pliku php.ini}{WordPress27}
+\fg{rys/uslugi/WordPress/25.png}{Wybranie php-cgi.exe}{WordPress29}
+\clearpage
+\fg{rys/uslugi/WordPress/26.png}{Konfiguracja Header Mapping}{WordPress30}
+\clearpage
+\fg{rys/uslugi/WordPress/27.png}{Ustawienie mapping na pliki i foldery}{WordPress31}
+\fg{rys/uslugi/WordPress/28.png}{Potwierdzenie konfiguracji}{WordPress32}
+\clearpage
+\fg{rys/uslugi/WordPress/29.png}{Przejście do sekcji domyślnego dokumentu w IIS Manager}{WordPress33}
+\fg{rys/uslugi/WordPress/30.png}{Dodanie index.php do domyślnego dokumentu}{WordPress34}
+\clearpage
+\fg{rys/uslugi/WordPress/31.png}{Wejście na stronę pobierania Web Deploy v4.0}{WordPress35}
+\fg{rys/uslugi/WordPress/32.png}{Pobranie Web Deploy v4.0}{WordPress36}
+\clearpage
+\fg{rys/uslugi/WordPress/33.png}{Instalacja Web Deploy v4.0}{WordPress37}
+\fg{rys/uslugi/WordPress/34.png}{Otwarcie DNS manager na SDC}{WordPress38}
+\clearpage
+\fg{rys/uslugi/WordPress/35.png}{Dodanie nowego hosta A }{WordPress39}
+\fg{rys/uslugi/WordPress/36.png}{Nazwa hosta WD – adres IP 192.168.6.40}{WordPress40}
+\clearpage
+\fg{rys/uslugi/WordPress/37.png}{Potwierdzenie dodania hosta}{WordPress41}
+\fg{rys/uslugi/WordPress/38.png}{Zainstalowanie wordpressa}{WordPress42}
+\clearpage
+\fg{rys/uslugi/WordPress/39.png}{Wyświetlenie strony wp.binarbuilders.ad z poziomu komputera użytkownika}{WordPress43}
